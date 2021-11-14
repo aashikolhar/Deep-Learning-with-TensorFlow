@@ -104,3 +104,12 @@ def make_preds(model, input_data):
   """
   forecast = model.predict(input_data)
   return tf.squeeze(forecast) # retrun 1D array of predictions
+
+# Make windowed dataset based on customized horizon
+def make_windowed_dataset_horizon(series, window_size, horizon, buffer_size):
+  dataset = tf.data.Dataset.from_tensor_slices(series)
+  dataset = dataset.window(size=window_size+horizon, shift=1, drop_remainder=True)
+  dataset = dataset.flat_map(lambda window: window.batch(window_size+horizon))
+  dataset = dataset.map(lambda window: (window[:-horizon], window[-horizon:]))
+  dataset =  dataset.shuffle(buffer_size)
+  return dataset
