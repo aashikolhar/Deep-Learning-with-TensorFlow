@@ -6,8 +6,8 @@ This repo contains approaches I implemented for a few of the most common problem
 
 ## Problems 
 ### 1.  Computer vision
-- Cats vs Dogs classification
-- Food classification - pizza vs steak
+- Cats vs Dogs classification😺🐶
+- Food classification - pizza vs steak🍕🥩
 - Food classification - 10 food classes
 
 ### 2. Natural Language Processing
