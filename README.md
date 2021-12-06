@@ -1,5 +1,6 @@
 # 🧠Deep-Learning-with-TensorFlow 
--  This repo contains approaches I implemented for a few of the most common problems that any Deep Learning Engineer starts with. 
+
+This repo contains approaches I implemented for a few of the most common problems that any Deep Learning Engineer starts with. 
 
 📖It contains problems related to Computer vision, Natural language processing to have a hands on experience in building Deep neural networks using TensorFlow.
 
